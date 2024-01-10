@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Заклятие смехом</title>
+	<style type="text/css">
+		div,h6,input
+		{
+			font-size:x-large;
+		}
+	</style>
+</head>
+<body>
+
+<input id="elem1" type="text" name="quantity" placeholder="Введите слово">
+<input id="butt" type="button" value="Сменить"/><br><br>
+<div id="str">Заклятие смехом</div>
+<div id="str1">О, рассметейтесь, смехачи!</div>
+<div id="str2">О, засмейтесь, смехачи!</div>
+<div id="str3">Что смеются смехами, что смеянствуют смеяльно,</div>
+<div id="str4">О, засмейтесь усмеяльно</div>
+<div id="str5">О, рассмещищ надсмеяльных - смех усмейных смехачей!</div>
+<div id="str6">О, иссмейся рассмеяльно, смех надсмейных смеячей!</div>
+<div id="str7">Смейево, смейево!</div>
+<div id="str8">Усмей, осмей, смешики, смешики!</div>
+<div id="str9">Смеюнчики, смеюнчики.</div>
+<div id="str10">О, рассмейтесь, смехачи!</div>
+<div id="str11">О, засмейтесь, смехачи!</div>
+<h6>1908 г.</h6>
+
+<script type="text/javascript">
+	butt.onclick = function() {
+		var val = document.getElementById('elem1').value;
+		var last = val.slice(-1);
+		document.getElementById('str').innerHTML="Заклятие "+val+"ом";
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+		document.getElementById('str1').innerHTML="О, рас"+val+"йтесь, "+val+"ачи!";}
+		else {document.getElementById('str1').innerHTML="О, рас"+val.slice(0,-1)+"йтесь, "+val+"ачи!";}
+
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+		document.getElementById('str2').innerHTML="О, за"+val+"йтесь, "+val+"ачи!";}
+		else 
+		{document.getElementById('str2').innerHTML="О, за"+val.slice(0,-1)+"йтесь, "+val+"ачи!";}
+		document.getElementById('str3').innerHTML="Что "+val.slice(0,-1)+"ются "+val+"ами, что "+val.slice(0,-1)+"янствуют "+val.slice(0,-1)+"яльно,";
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+		document.getElementById('str4').innerHTML="О, за"+val+"йтесь у"+val.slice(0,-1)+"яльно!";
+		}else{
+		document.getElementById('str4').innerHTML="О, за"+val.slice(0,-1)+"йтесь у"+val.slice(0,-1)+"яльно!";}
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+			document.getElementById('str5').innerHTML="О, рас"+val+"шищ над"+val.slice(0,-1)+"яльных — "+val+" у"+val+"йных "+val+"ачей!";
+		}else{
+		document.getElementById('str5').innerHTML="О, рас"+val.slice(0,-1)+"шищ над"+val.slice(0,-1)+"яльных — "+val+" у"+val.slice(0,-1)+"йных "+val+"ачей!";}
+
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+			document.getElementById('str6').innerHTML="О, ис"+val+"йся рас"+val.slice(0,-1)+"яльно, "+val+" над"+val+"йных "+val.slice(0,-1)+"ячей!";
+		}
+			else{
+		document.getElementById('str6').innerHTML="О, ис"+val.slice(0,-1)+"йся рас"+val.slice(0,-1)+"яльно, "+val+" над"+val.slice(0,-1)+"йных "+val.slice(0,-1)+"ячей!";
+		}
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+			document.getElementById('str7').innerHTML=val+"йево, "+val+"йево!";
+		}else{
+		document.getElementById('str7').innerHTML=val.slice(0,-1)+"йево, "+val.slice(0,-1)+"йево!";}
+
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+			document.getElementById('str8').innerHTML="У"+val+"й, о"+val+"й, "+val.slice(0,-1)+"шики, "+val.slice(0,-1)+"шики!"
+		}else{
+		document.getElementById('str8').innerHTML="У"+val.slice(0,-1)+"й, о"+val.slice(0,-1)+"й, "+val.slice(0,-1)+"шики, "+val.slice(0,-1)+"шики!";
+
+		}
+
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+		document.getElementById('str9').innerHTML=val+"юнчики, "+val+"юнчики.";}
+		else
+		{document.getElementById('str9').innerHTML=val.slice(0,-1)+"юнчики, "+val.slice(0,-1)+"юнчики.";}
+
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+		document.getElementById('str10').innerHTML="О, рас"+val+"йтесь, "+val+"ачи!";}
+		else {document.getElementById('str10').innerHTML="О, рас"+val.slice(0,-1)+"йтесь, "+val+"ачи!";}
+
+		if (last == "а" || last == "у" || last == "е" || last == "ы" || last == "о" || last == "я" || last == "и" || last == "ю" ) {
+		document.getElementById('str11').innerHTML="О, за"+val+"йтесь, "+val+"ачи!";}
+		else 
+		{document.getElementById('str11').innerHTML="О, за"+val.slice(0,-1)+"йтесь, "+val+"ачи!";}
+	}
+
+</script>
+
+</body>
+</html>
